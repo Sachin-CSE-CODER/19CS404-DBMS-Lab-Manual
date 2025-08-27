@@ -48,9 +48,11 @@ Design a database for patient management, appointments, medical records, and bil
 # ER Diagram Submission - Student Name
 
 ## Scenario Chosen:
-University / Hospital (choose one)
+University 
 
 ## ER Diagram:
+<img width="1050" height="652" alt="Screenshot 2025-08-27 164313" src="https://github.com/user-attachments/assets/8197da11-dd2f-492d-8d71-0028ce522949" />
+
 ![ER Diagram](er_diagram.png)
 
 ## Entities and Attributes:
@@ -70,3 +72,7 @@ University / Hospital (choose one)
 Brief explanation of why you chose certain entities, relationships, and assumptions
 
 ## RESULT
+In this experiment, we successfully designed an Entity-Relationship (ER) diagram for a University
+Database System. The ER diagram identifies key entities such as University, Courses, Students, and
+Timetable, along with their respective attributes. The relationships among these entities-Offers, Takes,
+and Has-were established with appropriate cardinality and participation constraints.
