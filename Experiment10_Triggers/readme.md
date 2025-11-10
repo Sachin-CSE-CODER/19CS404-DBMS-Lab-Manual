@@ -65,7 +65,8 @@ SELECT * FROM employee_log;
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
 <br>
 <br>
-<img width="1000" height="252" alt="image" src="https://github.com/user-attachments/assets/1b62a172-bca4-49ca-84c2-d6bd7b4ec848" />
+<img width="441" height="503" alt="image" src="https://github.com/user-attachments/assets/a96248af-ef17-4717-9e16-3b763676a794" />
+
 
 
 ---
@@ -136,7 +137,8 @@ SELECT product_id, product_name, price, last_modified FROM products;
 - The `last_modified` column in the `products` table is updated automatically to the current date and time when any record is updated.
 <br>
 <br>
-<img width="864" height="280" alt="image" src="https://github.com/user-attachments/assets/c3cabd27-4546-4e16-9e24-641705427ea2" />
+<img width="514" height="358" alt="image" src="https://github.com/user-attachments/assets/8d8a6f3d-39e8-43dc-945a-302eec8009d5" />
+
 
 ---
 
@@ -177,7 +179,8 @@ SELECT * FROM audit_log;
 - The `audit_log` table will maintain a count of how many updates have been made to the `customer_orders` table.
 <br>
 <br>
-<img width="715" height="201" alt="image" src="https://github.com/user-attachments/assets/28593a64-4a18-4f7b-900b-c610d577754b" />
+<img width="157" height="205" alt="image" src="https://github.com/user-attachments/assets/eb851b64-b4c7-433e-81d4-8e41d3156119" />
+
 
 
 ---
@@ -190,6 +193,11 @@ SELECT * FROM audit_log;
 ### PL/SQL Query:
 
 ```
+CREATE TABLE employees (
+    employee_id NUMBER PRIMARY KEY,
+    name        VARCHAR2(50),
+    salary      NUMBER
+);
 CREATE OR REPLACE TRIGGER trg_check_salary
 BEFORE INSERT ON employees
 FOR EACH ROW
@@ -213,6 +221,7 @@ INSERT INTO employees VALUES (2, 'Kiran', 2000);
 
 ## RESULT
 Thus, the PL/SQL trigger programs were written and executed successfully.
+
 
 
 
